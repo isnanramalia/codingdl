@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title> Contacts </title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+
+
+        <!--menu website-->
+        <div>
+          <a href="html5+css.html" class="menu"> Home</a>
+          <a href="Member.html" class="menu" >Member </a>
+          <a href="Contacts.html" class="menu"> Contacts</a>
+        </div>
+
+   <h1> <b>Contacts Me </b></h1>
+
+    <!--membuat forms -->
+
+   <br>
+    <form>
+      <fieldset>
+        <legend> Nama dan Pesan </legend>
+      <label for="">nama</label>
+      <input type="text" placeholder="nama_User" value="nama anda" id="nama_User" >
+   </br>
+   <br>
+       <label for="pesan_user"> Pesan </label>
+       <textarea cols="100" rows="8" id="pesan_user"> Pesan saya adalah... </textarea>
+     </fieldset>
+
+       <fieldset>
+       <legend> Pilihan Data </legend>
+       <br>
+       <label>Hobi</label><br>
+       <input type="checkbox" name="hobi_user" value="0" > Menggambar
+       <input type="checkbox" name="hobi_user" value="1"> Menulis
+       <input type="checkbox" name="hobi_user" value="2" checked> Mengetik
+       <br>
+       <label> Jenis Kelamin </label><br>
+       <input type="radio" name="gender" value="3">Laki-Laki
+       <input type="radio" name="gender" value="4" checked>Perempuan
+     </fieldset>
+   </br>
+
+    <!-- select and option -->
+
+   <br>
+      <label> Pelajaran </label>
+      <select>
+        <optgroup label="frontend">
+        <option value="html">HTML</option>
+        <option value="css">CSS</option>
+      </optgroup>
+
+      <optgroup label="Backend">
+        <option value="js">PHP</option>
+        <option value="db">database</option>
+      </optgroup>
+    </select>
+    <input type="submit">
+     </form>
+
+   <!--New input in html5= search,email,url,tel,number,range,date,month,week,time,datetime,datetime-local,color-->
+      <p><input type="email" name="email" value="Your email.." required></p>
+      <input type="tel" name="tel" value="Tel" required>
+      <input type="number" name="Age" value="0" min="15" max="100">
+      <input id="skill" type="range" min="1" max="100" value="Range">
+      <input id="exit-time" name="exit-time" type="time">
+      <input id="color" name="color" type="color">
+
+
+
+
+   </br>
+
+
+    <!-- bagian awal isinya tag heading-->
+    <div>
+     <h2> You can messages me in:</h2>
+     <h3>Instagram= @isnanuramalia_</h3>
+     <h4>Twitter= isnanuramalia2</h4>
+    </div>
+
+    <footer>
+        <p> &copy; Isnanuramalia 15/12/2020</p>
+    </footer>
+
+  </body>
+</html>

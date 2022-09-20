@@ -1,0 +1,49 @@
+<!--Tips CSS-->
+
+<h1>Accordian</h1>
+
+<div class="wrapper">
+  <a href="#menu">Menu</a>
+  <div id="menu" class="main"> Halo guys, in here i'm want to talk with you about my family, you know i don't know should talk what? wk</div>
+
+  <div>
+    <a href="#menu2">Menu2</a>
+    <div id="menu2" class="main"> Halo guys, in here i'm want to talk with you about my family, you know i don't know should talk what? wk</div>
+  </div>
+
+  <div>
+    <a href="#menu3">Menu3</a>
+    <div id="menu3" class="main"> Halo guys, in here i'm want to talk with you about my family, you know i don't know should talk what? wk</div>
+  </div>
+
+
+  <style media="screen">
+    body {
+      margin: 15% 15%;
+      font-family: sans-serif
+    }
+
+    a {
+      background-color: purple;
+      display: block;
+      color: white;
+      text-decoration: none;
+      font-size: 22px;
+      color: black
+    }
+
+    .main {
+      padding: 0;
+      height: 0;
+      overflow: hidden
+    }
+
+    .main:target{
+      padding: 5px 10px;
+      height:auto
+    }
+
+    .wrapper{
+      margin: 30px
+    }
+  </style>

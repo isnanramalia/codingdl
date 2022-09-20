@@ -1,0 +1,122 @@
+body{
+  background: rgb(237, 110, 21);
+}
+
+h1{
+  column-span: all;
+}
+
+#menu{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  column-count: 3;
+  column-gap: 60px
+}
+
+.tracks{
+  background: white ;
+  width: 30%;
+  height: 150px;
+  margin-bottom: 10px
+}
+
+@media only screen and (max-width:1024px){
+  .tracks{
+    width: 40%
+  }
+
+  .tracks:nth-child(5){
+    order: -1
+  }
+}
+
+@media only screen and (max-width:760px){
+  .tracks{
+    width: 90%
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Pasangan flex-parent
+
+body {
+  background: purple
+}
+
+.flex-parent {
+  height: 450px;
+  width: 200px;
+  display: flex;
+  /*flex-direction: row;*
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+}
+
+.flex-child {
+  color: black;
+  background: white;
+  border: 1px solid black;
+  width: 100px;
+  height: 100px;
+}
+
+
+#One {
+  order: 2;
+  (lebih besar)flex-grow: 2;
+  (lebih kecil)flex-shrink: 1;
+  (mengatur lebar dari item)flex-basis: 50px;
+  (sendiri2)align-self: center
+}
+
+#two {
+  order: 3;
+  flex-grow: 2;
+  flex-shrink: 2
+}
+
+#Three {
+  order: 4;
+  flex-grow: 1;
+  flex-shrink: 2
+}
+
+#Four {
+  order: 1;
+  flex-grow: 3;
+  flex-shrink: 3
+}*/

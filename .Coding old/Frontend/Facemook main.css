@@ -1,0 +1,67 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: sans-serif;
+}
+
+h1 {
+  float: left;
+  font-size: 32px;
+  padding-bottom: 17px
+}
+
+.wrapper {
+  width: 900px;
+  margin: 0 auto;
+}
+
+.content-header {
+  background: purple;
+  color: white;
+  padding: 10px 0
+}
+
+.content-header form {
+  float: right;
+}
+
+.content-header label {
+  font-size: 12px;
+  padding-bottom: 2px
+}
+
+.content-header label,
+.content-header input {
+  display: block;
+}
+
+.content-header input[type="checkbox"]{
+  display: inline-block;
+}
+
+.content-header input[type="submit"]{
+  background-color: purple;
+  color: white;
+  font-weight: bold;
+  padding: 2px;
+  border: 1px solid black;
+  font-size: 13px;
+  margin-top: 15px
+}
+
+.clearfix:after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.group-form{
+  float: left;
+  margin-left: 11px;
+}
+
+.group-from a {
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 11px;
+  text-decoration: none;
+}

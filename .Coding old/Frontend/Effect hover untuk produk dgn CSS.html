@@ -1,0 +1,80 @@
+ <!--Tips CSS-->
+
+ <h1> CSS Tips 2</h1>
+
+ <div id="wrap">
+   <img src="Totebag Johnny.jpg" />
+   <div id="info">
+     <p>
+       Johnny's Clothes
+       <span> Rp-100.000</span>
+     </p>
+     <a href="">Buy</a>
+   </div>
+ </div>
+
+ <style media="screen">
+   body{
+     margin: 15% 15%;
+     font-family: sans-serif
+   }
+
+   #wrap {
+     width: 150px;
+     height: 250px;
+     position: relative;
+     overflow:hidden
+   }
+
+   #wrap p {
+     display: none
+   }
+
+   #wrap img {
+     width: 100%;
+     height: auto
+   }
+
+   #wrap:hover p {
+     display: block
+   }
+
+   #wrap #info {
+     display: none
+   }
+
+   #wrap:hover #info {
+     display: block
+   }
+
+   #info {
+     background-color: rgba(0, 0, 0, 0.3);
+     position: absolute;
+     top: 0px;
+     text-align: center;
+     padding-top: 30%;
+     height: 100%;
+     width: 100%;
+     color: white;
+     font-size: 15px;
+   }
+
+   #info span {
+     dispaly: block
+   }
+
+   a {
+     text-decoration: none;
+     color: black;
+     width: 100px;
+     display: block;
+     border: 1px solid white;
+     padding: 5px;
+     margin: 0 auto;
+   }
+
+   a:hover {
+     background-color: white;
+     color:black
+   }
+ </style>

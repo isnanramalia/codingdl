@@ -1,0 +1,131 @@
+/*HOVER =keadaan ketika mouse berada di elemen tertentu
+      1. Diri sendiri
+      2. Elemen lain
+        >langsung didalam
+        +langsung setelah
+        (space) berada disuatu tempat (dalam container)*/
+h1:hover {
+  color: white
+}
+
+h1:hover+h2 {
+  color: purple
+}
+
+h1 {
+  color: black;
+  font-size: 50p;
+  text-align: center;
+  text-decoration: underline;
+}
+
+h2 {
+  color: rgba(10, 16, 17, 0.81);
+  font-size: 20px;
+  text-align: center;
+}
+
+/* Position: relativ=tergantung browser; absolute=tergantung parent elemen; static=mengikuti order yg ada; fixed=tidak berubah.
+ versi html5(Lansung pake namanya)  */
+nav {
+  background: rgba(244, 241, 245, 0.02);
+}
+
+header {
+  /*margin: top right bottom left*/
+  margin: 20px 1px 50px 0
+}
+
+footer {
+  text-align: center;
+  clear: both;
+}
+
+main {
+  margin-top: 50px
+}
+
+table {
+  float: left;
+  margin-right: 20px
+}
+
+ol, ul, dl {
+  float: left;
+  margin: 50px;
+  padding: 0px;
+  width: 44, 44;
+}
+
+body {
+  background-color: rgba(225, 175, 231, 0.7);
+}
+
+div {
+  background-color: rgba(225, 175, 231, 0.7)
+}
+
+body {
+  /*background-image: url("Johnny.jpg");background-repeat: round */
+  background-attachment: fixed;
+  background-position: center
+}
+
+/*versi html lama (harus pake id"" lalu di #)*/
+#texs_fighting {
+  text-indent: 20px
+}
+
+#text_panjang {
+  text-align: justify;
+  text-indent: 20px
+}
+
+#menu_table {
+  position: relative;
+}
+
+#parent_h2 {
+  position: fixed;
+  background: grey;
+  top: 90px;
+  z-index: -1
+}
+
+/*Kondisi biasa link atas*/
+.menu:link {
+  background: rgb(158, 92, 224);
+  color: white;
+}
+
+/*Kondisi after visited*/
+.menu:visited {
+  background: rgb(158, 92, 224);
+  color: purple
+}
+
+/*Kondisi hover~ mouse ada di atasnya*/
+.menu:hover {
+  background: rgb(158, 92, 224);
+  color: lightblue
+}
+
+/*Kondisi sedang diketik*/
+.menu:active {
+  background: rgb(158, 92, 224);
+  color: lightpink
+}
+
+.menu {
+  display: inline-block;
+  height: auto;
+  width: auto;
+  text-decoration: none;
+  border: 1px solid purple;
+  padding: 5px 15px
+}
+
+/*FOCUS= keadaan ketika input diklik*/
+input:focus {
+  background: rgb(158, 92, 224)
+}

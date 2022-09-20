@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+     <title>Learn CSS 3</title>
+
+     <style>
+/*--CSS--*/
+     .div{width:100px; height:100px; background:green; margin-bottom:5px; transition: width 1s, background 1s;}
+
+
+       #div{width:50px; height:50px; background:purple; transform: translate(30px, 20px)}
+       #div1{width:50px; height:50px; background:blue; transform:rotate(50deg)}
+    /* #div2 {width:50px; height:50px; background:yellow; transform: Scale(1,5,1.5)}*/
+       #div3{width:50px; height:50px; background:aqua; transform:/*skewX(50deg) skewY(10deg)*/ skew(10deg, 10deg) }
+
+       body{ margin-left: 80px}
+
+       #div4:hover{width:200px}
+       #div5:hover{transition-delay: 1s; background: red}
+       #div6:hover{transition-timing-function:ease-in-out ;height: 180px}
+       #div6{transition: height 2s}
+
+
+       /*horizontal,vertikal,blur-radius,color*/
+      #text{text-shadow:10px 10px 5px black}
+      #text1{width: 50px; /*overvlow: scrool; text-overflow: ellipsis;*/ word-wrap: break-word}
+
+       /*Border, radius, shadow*/
+      #box{height: 100px; width: 100px; background: purple; border-radius: 20px}
+      #box2{height:150px; width:100px; background:lightpink; border-radius:50px}
+      #box3{height:100px; width:100px; background: blue;
+        /*horizontal,vertikal,blur,spreed ,color*/
+        box-shadow:5px 10px 5px 5px lightblue}
+      #box4{height: 100px; width: 100px; background: purple; padding:10px; border:5px solid pink ;box-sizing: border-box}
+      #pers{perspective: 150px; perspective-origin: 50% 60%}
+      #pers1{background: blue; transform: rotateX(20deg);}
+      #tran{background: purple; transform: translateZ(1px) rotateX(10deg); transition: transform 1s}
+      #tran:hover{transform: translateZ(2px);}
+
+      #sca1{background: aqua; transform:scaleZ(1) rotateY(20deg); transition: transform 3s; border: 1px solid blue}
+      #sca1:hover{transform: scaleZ(1) rotateY(60deg);}
+      #sca2{background: red; transform:scaleZ(1) rotateY(20deg); transition: transform 3s; border: 1px solid black}
+      #sca2:hover{transform: scaleX(1.5) rotateY(60deg);}
+
+      #card1{ background: yellow; width: 200px; transition: 1s; border: blue}
+      #card1:hover{ transform: rotateY(90deg);}
+
+      #card{position: relative;height: 100px; width: 100px; transition: transform 2s; border: 2px solid black; background: pink; transform-style: preserve-3d;}
+      #front,#back{position: absolute; top: 0px; left: 0px; height: 100px; width: 100px; backface-visibility: hidden;}
+      #back{transform: rotateY(180deg);}
+      #front{background: blue}
+      #card:hover{transform: rotateY(180deg);}
+      #cardd{perspective: 500px}
+     </style>
+
+
+  </head>
+  <body>
+
+
+<!--HTML-->
+    <h1>Flipcard</h1>
+    <div id="boxx">
+    <div class="div" id="card1"></div>
+    </div>
+
+
+    <h1>Text shadow</h1>
+    <p id="text"> Isna nur amalia</p>
+
+    <h1>Word wrap</h1>
+    <div id="text1"> Halo i'm isna nur amalia, i hope we can familiar with each other</div>
+
+    <h1>Translate</h1>
+    <div id="div"></div>
+
+    <h1>Rotate</h1>
+    <div id="div1"></div>
+
+    <h1>Skew</h1>
+    <div id="div3"></div>
+
+    <h1>translation</h1>
+    <div id="div4" class="div"></div>
+    <div id="div5" class="div"></div>
+    <div id="div6" class="div"></div>
+
+    <h1>Boreder radius</h1>
+    <div id="box"></div>
+    <div id="box2"></div>
+
+    <h1>box shadow</h1>
+    <div id="box3"></div>
+
+    <h1>sizing, vendor prefix</h1>
+    <div id="box4"></div>
+
+   <!-- efek only in 3d element,
+        efek in child not a elemnt-->
+    <h1>perspective</h1>
+    <div id="pers">
+     <div id="pers1" class="div"></div>
+
+     <h1>Translate & rotate</h1>
+     <div id="tran" class="div"></div>
+
+     <h1>3d Scale</h1>
+     <div id="sca">
+     <div id="sca1" class="div">Scale Z</div>
+     <div id="sca2" class="div">Scale X</div>
+     </div>
+
+
+     <h1>Flipcard2</h1>
+     <div id="cardd">
+     <div id="card">
+     <div id="front">Learn</div>
+     <div id="back">CSS</div>
+     </div>
+    </div>
+
+
+  </body>
+</html>
+
+
+<!--vendor prefix
+  1.webkit(chroome,safari)- box-sizing:border-box
+  2.moz(mozila)
+  3.o(opera)
+  4.ms(explorer)-->

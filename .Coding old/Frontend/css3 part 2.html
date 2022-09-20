@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+  <head>
+    <meta charset="utf-8">
+    <title> Learn CSS3 part 2</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap" rel="stylesheet">
+     <style>
+      body{
+        margin-bottom: 500px;
+        margin-left: 10px;
+      }
+
+      div{
+        background: yellow;
+        width: 50px;
+        height:  50px;
+        animation-name: goyang;
+        animation-duration: 5s;
+        animation-iteration-count: 5;
+      /*  animation-direction: reverse;*/
+        animation-delay: 2s;
+      /*fill: nentuin berhenti di kondisi akhir*/
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-in;
+        animation-play-state: paused
+      }
+
+      div:hover{
+        animation-play-state: running;
+        transition:transform 2s
+      }
+
+      @keyframes goyang{
+        /*from{background: yellow}
+        to{background: black}*/
+        0%{background: yellow; width:160px}
+        25%{background: red}
+        50%{background:aqua; width: 140px}
+        75%{background: blue}
+        100%{background: black; width: 50px}
+      }
+
+      article{
+        height: 650px;
+        background-image: url("Johnny.jpg");
+        background-size: cover;
+        border: 5px dotted blue;
+        background-clip: content-box;
+      }
+
+      footer{
+        font-family:'Open Sans', sans-serif;
+        width: 100px;
+        height: 120px;
+        background: yellow;
+        overflow-y: scroll;
+        resize: both;
+        opacity: 0.7;
+      }
+
+      img{
+        opacity: 0.4;
+        transition:opacity 1s;
+        margin-left: 100px
+      }
+      img:hover{
+        opacity:1
+      }
+
+
+      body3 :not(h1){
+        color:green;
+      }
+      p:first-child{
+        color: purple
+      }
+      p:last-child {
+        font-size: 15px;
+        color: blue
+      }
+      p:only-child{
+        background: yellow
+      }
+
+      ul :nth-child(odd) {
+        text-decoration: underline
+      }
+      ul :nth-child(even){
+        text-decoration: line-through
+      }
+      /*(an+b)*/
+      ul :nth-child(3n+0){
+        background: aqua
+      }
+
+      input:checked{
+        width:50px;
+      }
+    /*enabled, disabled, invalid*/
+      input:enabled{
+        border: 2px solid blue;
+      }
+
+      input:disabled{
+        border: 2px solid red;
+      }
+
+      input:invalid{
+       background:red;
+       color:white
+      }
+
+
+      /*@font-face {
+        font-family: dafont;
+        src:ur(others/typewcond_regular.otf)
+      }*/
+
+    </style>
+  </head>
+
+  <body>
+    <h1>Animasi</h1>
+    <div></div>
+  </body>
+
+
+  <body1>
+    <h1>Image</h1>
+    <article> Johnnya Orlando</article>
+  </body1>
+
+  <body2>
+    <h1>Oveflow, resize, opacity</h1>
+    <footer>
+      Halo guys, i love you wkwkwkwkwk
+      Halo guys, i love you wkwkwkwkwk
+      Halo guys, i love you wkwkwkwkwk
+      Halo guys, i love you wkwkwkwkwk
+      Halo guys, i love you wkwkwkwkwk
+      Halo guys, i love you wkwkwkwkwk
+      Halo guys, i love you wkwkwkwkwk
+      Halo guys, i love you wkwkwkwkwk
+      Halo guys, i love you wkwkwkwkwk
+      Halo guys, i love you wkwkwkwkwk
+      Halo guys, i love you wkwkwkwkwk
+    </footer>
+      <p><img src="phrince.jpg" width=200 ></p>
+  </body2>
+
+
+ <body3>
+  <h1>Selektor- Pseudo classes</h1>
+  <aside>
+    <p>Paragraph only child</p>
+  </aside>
+  <aside>
+    <span>span pertama</span>
+    <p>Paragraph pertama</p>
+  </aside>
+  <aside>
+   <p>First Paragraph </p>
+   <p>Second Paragraph</p>
+   <p>Third paragraph</p>
+  </aside>
+
+  <h1>nth child</h1>
+   <ul>
+     <li>first list</li>
+     <li>second list</li>
+     <li>third list</li>
+     <li>fourth list</li>
+     <li>fifth list</li>
+     <li>sixth list</li>
+   </ul>
+
+   <h1>input</h1>
+    <input type="checkbox">Male
+    <input type="checkbox" checked>Female
+    <br><br>
+
+    <input type="text" placeholder="full name">
+    <input type="text" placeholder="nickname">
+    <input type="text" placeholder="Hometown" disabled>
+    <input type="text" placeholder="email">
+
+    <br><br><br><br>
+    Isnanuramalia
+  </body3>
+
+</html>
